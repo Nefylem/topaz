@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Topaz.Application;
 
 namespace Topaz.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : TopazController
     {
-        // GET: Home
         public ActionResult Index()
         {
             return View();

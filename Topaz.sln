@@ -4,10 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topaz", "Topaz\Topaz.csproj", "{7E5BD602-99D5-49AA-BCEC-E87D3A3CAD71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C527BA63-0613-4A72-9C04-943524DFDAA8} = {C527BA63-0613-4A72-9C04-943524DFDAA8}
+		{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE} = {9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}
+	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Topaz.Application", "Topaz.Application\Topaz.Application.xproj", "{C47DF76B-8B4A-47E1-B324-D3018214259A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topaz.Application", "Topaz.Application\Topaz.Application.csproj", "{C527BA63-0613-4A72-9C04-943524DFDAA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE} = {9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}
+	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Topaz.Model", "Topaz.Model\Topaz.Model.xproj", "{6E0CE62F-06D4-4BC4-B0D1-19968D81A15A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topaz.Model", "Topaz.Model\Topaz.Model.csproj", "{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +26,14 @@ Global
 		{7E5BD602-99D5-49AA-BCEC-E87D3A3CAD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E5BD602-99D5-49AA-BCEC-E87D3A3CAD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E5BD602-99D5-49AA-BCEC-E87D3A3CAD71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C47DF76B-8B4A-47E1-B324-D3018214259A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C47DF76B-8B4A-47E1-B324-D3018214259A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C47DF76B-8B4A-47E1-B324-D3018214259A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C47DF76B-8B4A-47E1-B324-D3018214259A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E0CE62F-06D4-4BC4-B0D1-19968D81A15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E0CE62F-06D4-4BC4-B0D1-19968D81A15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E0CE62F-06D4-4BC4-B0D1-19968D81A15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E0CE62F-06D4-4BC4-B0D1-19968D81A15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C527BA63-0613-4A72-9C04-943524DFDAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C527BA63-0613-4A72-9C04-943524DFDAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C527BA63-0613-4A72-9C04-943524DFDAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C527BA63-0613-4A72-9C04-943524DFDAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDF1795-FDE6-42F4-9298-C6D5E266DCAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

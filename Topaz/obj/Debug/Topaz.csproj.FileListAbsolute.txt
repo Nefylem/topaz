@@ -31,3 +31,7 @@ G:\WebProjects\Topaz\Topaz\bin\System.Web.Mvc.xml
 G:\WebProjects\Topaz\Topaz\obj\Debug\Topaz.csprojResolveAssemblyReference.cache
 G:\WebProjects\Topaz\Topaz\obj\Debug\Topaz.dll
 G:\WebProjects\Topaz\Topaz\obj\Debug\Topaz.pdb
+G:\WebProjects\Topaz\Topaz\bin\EntityFramework.dll
+G:\WebProjects\Topaz\Topaz\bin\EntityFramework.xml
+G:\WebProjects\Topaz\Topaz\bin\Topaz.Application.dll
+G:\WebProjects\Topaz\Topaz\bin\Topaz.Application.pdb

@@ -1,0 +1,8 @@
+G:\WebProjects\Topaz\Topaz.Model\bin\Debug\Topaz.Model.dll.config
+G:\WebProjects\Topaz\Topaz.Model\bin\Debug\Topaz.Model.dll
+G:\WebProjects\Topaz\Topaz.Model\bin\Debug\Topaz.Model.pdb
+G:\WebProjects\Topaz\Topaz.Model\bin\Debug\EntityFramework.dll
+G:\WebProjects\Topaz\Topaz.Model\bin\Debug\EntityFramework.xml
+G:\WebProjects\Topaz\Topaz.Model\obj\Debug\Topaz.Model.csprojResolveAssemblyReference.cache
+G:\WebProjects\Topaz\Topaz.Model\obj\Debug\Topaz.Model.dll
+G:\WebProjects\Topaz\Topaz.Model\obj\Debug\Topaz.Model.pdb
