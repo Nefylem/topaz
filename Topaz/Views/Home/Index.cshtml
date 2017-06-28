@@ -3,18 +3,55 @@
     Layout = "~/Views/Layouts/_login.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-<div>
-    Create new user<br/>
-    Login<br/>
-    Forgot password<br/>
+<div class="login_panel">
+    <ul id="login_selection" class="login_selection">
+        <li><a class="active" view="existing_user" onclick="setMenu(this)">Existing User</a></li>
+        <li><a view="new_user" onclick="setMenu(this); setupNewUserFields();">New User</a></li>
+    </ul>
+    <div id="login_selection_display">
+        <div id="existing_user">
+            login
+            Forgot username or password?
+        </div>
+        <div id="new_user" style="display: none">
+            <div class="subpanel_title">Please enter your details</div>
+            <div class="data_entry_field">
+                <div class="field_title">Given Name</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_given" class="form-control" onkeyup="checkKey(this, event)"/>
+                </div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Other Name(s)</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_other" class="form-control" onkeyup="checkKey(this, event)"/></div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Last Name</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_surname" class="form-control" onkeyup="checkKey(this, event)"/></div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Email</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_email" class="form-control" onkeyup="checkKey(this, event)"/></div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Mobile</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_mobile" class="form-control" onkeyup="checkKey(this, event)"/>
+                </div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Password</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_password" type="password" class="form-control" onkeyup="checkKey(this, event)" /></div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Confirm Password</div>
+                <div class="field_entry"><input name="new_user_field" id="new_user_confirm" type="password" class="form-control" onkeyup="checkKey(this, event)"/></div>
+            </div>
+            <div class="data_entry_field">
+                <div class="field_title">Checkbox</div>
+                <div class="field_entry">There is no privacy policy, this is a TEST system only</div>
+            </div>
+            <div class="data_entry_control">
+                <button class="btn btn-primary btn-create" onclick="createNewUser()">Create</button>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
