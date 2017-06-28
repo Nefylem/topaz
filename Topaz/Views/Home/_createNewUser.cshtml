@@ -1,0 +1,90 @@
+﻿<div class="subpanel_title">Please enter your details</div>
+<div class="data_entry_field">
+    <div class="field_title">Given Name</div>
+    <div class="field_entry">
+        <input name="new_user_field" id="new_user_given" class="form-control" onkeyup="checkKey(this, event); checkPassword();" />
+    </div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">Other Name(s)</div>
+    <div class="field_entry"><input name="new_user_field" id="new_user_other" class="form-control" onkeyup="checkKey(this, event)" /></div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">Last Name</div>
+    <div class="field_entry"><input name="new_user_field" id="new_user_surname" class="form-control" onkeyup="checkKey(this, event); checkPassword();" /></div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">Email</div>
+    <div class="field_entry"><input name="new_user_field" id="new_user_email" class="form-control" onkeyup="checkKey(this, event); checkPassword();" /></div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">Mobile</div>
+    <div class="field_entry">
+        <input name="new_user_field" id="new_user_mobile" class="form-control" onkeyup="checkKey(this, event)" />
+    </div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">Password</div>
+    <div class="field_entry"><input name="new_user_field" id="new_user_password" type="password" class="form-control" onkeyup="checkKey(this, event); checkPassword();" /></div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">Confirm Password</div>
+    <div class="field_entry">
+        <input name="new_user_field" id="new_user_confirm" type="password" class="form-control" onkeyup="checkKey(this, event); checkPassword();" />
+    </div>
+</div>
+<div class="data_entry_title">
+    <div class="data_entry_title_fields">Required Fields</div>
+    <div class="data_entry_title_fields">Password Requirements</div>
+</div>
+<div>
+    <div class="data_entry_subset">
+        <div class="data_entry_title_fields">
+            <div id="name_length" class="check_password check_password_error">
+                <span id="name_length_ok" style="display: none" class="glyphicon glyphicon-ok"></span>
+                <span id="name_length_ng" class="glyphicon glyphicon-remove"></span>
+                <span id="name_length_check"> Name</span>
+            </div>
+            <div id="email_length" class="check_password check_password_error">
+                <span id="email_length_ok" style="display: none" class="glyphicon glyphicon-ok"></span>
+                <span id="email_length_ng" class="glyphicon glyphicon-remove"></span>
+                <span id="email_length_check"> Email address</span>
+            </div>
+        </div>
+        <div class="data_entry_title_fields">
+            <div id="password_length" class="check_password check_password_error">
+                <span id="6_char_ok" style="display: none" class="glyphicon glyphicon-ok"></span>
+                <span id="6_char_ng" class="glyphicon glyphicon-remove"></span>
+                <span id="password_length_check"> 6 characters</span>
+            </div>
+            <div id="password_uppercase" class="check_password check_password_error">
+                <span id="pass_uppercase_ok" style="display: none" class="glyphicon glyphicon-ok"></span>
+                <span id="pass_uppercase_ng" class="glyphicon glyphicon-remove"></span>
+                <span> Uppercase character</span>
+            </div>
+            <div id="password_number" class="check_password check_password_error">
+                <span id="pass_number_ok" style="display: none" class="glyphicon glyphicon-ok"></span>
+                <span id="pass_number_ng" class="glyphicon glyphicon-remove"></span>
+                <span> Number</span>
+            </div>
+            <div id="password_match" class="check_password check_password_error">
+                <span id="pass_match_ok" style="display: none" class="glyphicon glyphicon-ok"></span>
+                <span id="pass_match_ng" class="glyphicon glyphicon-remove"></span>
+                <span> Confirmation password</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="data_entry_field">
+    <div class="field_title">&nbsp;</div>
+    <div class="field_entry">There is no privacy policy, this is a TEST system only</div>
+</div>
+<div class="data_entry_control">
+    <div class="data_entry_control_create">
+        <button class="btn btn-primary btn-create" onclick="createNewUser()" id="submit_create_user" disabled>Create</button>
+    </div>
+    <div class="data_entry_control_cancel">
+        <button class="btn btn-danger btn-create" onclick="setupNewUserFields();" id="submit_cancel_user">Clear</button>
+    </div>
+</div>
+        </div>

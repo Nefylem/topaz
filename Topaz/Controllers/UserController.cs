@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Topaz.Application;
+using Topaz.Application.Login.Dto;
 
 namespace Topaz.Controllers
 {
@@ -13,6 +14,12 @@ namespace Topaz.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult CreateNewUser(UserDto.NewUser newUser)
+        {
+            var result = Topaz.Login.CreateNewUser(newUser);
+            return Json(result.Result);
         }
     }
 }

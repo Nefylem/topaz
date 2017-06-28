@@ -50,6 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Command\EncryptionControl.cs" />
+    <Compile Include="Common\Dto\CommonDto.cs" />
+    <Compile Include="Login\Command\NewUserCommand.cs" />
+    <Compile Include="Login\Dto\UserDto.cs" />
     <Compile Include="Login\ILoginService.cs" />
     <Compile Include="Login\LoginService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Topaz.Model\Topaz.Model.csproj">
+      <Project>{9fdf1795-fde6-42f4-9298-c6d5e266dcae}</Project>
+      <Name>Topaz.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

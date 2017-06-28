@@ -124,6 +124,7 @@
     <Content Include="Views\Layouts\_login.cshtml" />
     <Content Include="Views\User\index.cshtml" />
     <Content Include="Views\Layouts\_home.cshtml" />
+    <Content Include="Views\Home\_createNewUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />

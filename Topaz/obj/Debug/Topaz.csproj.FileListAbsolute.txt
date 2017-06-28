@@ -35,3 +35,5 @@ G:\WebProjects\Topaz\Topaz\bin\EntityFramework.dll
 G:\WebProjects\Topaz\Topaz\bin\EntityFramework.xml
 G:\WebProjects\Topaz\Topaz\bin\Topaz.Application.dll
 G:\WebProjects\Topaz\Topaz\bin\Topaz.Application.pdb
+G:\WebProjects\Topaz\Topaz\bin\Topaz.Model.dll
+G:\WebProjects\Topaz\Topaz\bin\Topaz.Model.pdb

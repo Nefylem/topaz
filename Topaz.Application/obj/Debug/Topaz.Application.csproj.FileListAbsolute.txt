@@ -18,3 +18,5 @@ G:\WebProjects\Topaz\Topaz.Application\bin\Debug\System.Web.WebPages.Deployment.
 G:\WebProjects\Topaz\Topaz.Application\obj\Debug\Topaz.Application.csprojResolveAssemblyReference.cache
 G:\WebProjects\Topaz\Topaz.Application\obj\Debug\Topaz.Application.dll
 G:\WebProjects\Topaz\Topaz.Application\obj\Debug\Topaz.Application.pdb
+G:\WebProjects\Topaz\Topaz.Application\bin\Debug\Topaz.Model.dll
+G:\WebProjects\Topaz\Topaz.Application\bin\Debug\Topaz.Model.pdb
