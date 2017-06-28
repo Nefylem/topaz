@@ -139,6 +139,7 @@ function createNewUser() {
     data['Email'] = $('#new_user_email').val();
     data['Mobile'] = $('#new_user_mobile').val();
     data['Password'] = $('#new_user_password').val();
+    $('#submit_create_user').prop('disabled', true);
 
     $.post('/User/CreateNewUser', { newUser: data }).done(function(result) {
         alert(result);
@@ -146,6 +147,38 @@ function createNewUser() {
         setupNewUserFields();
     }).fail(function(result) {
         alert('Sorry, something went wrong\n' + result);
+    }).always(function() {
+        $('#submit_create_user').prop('disabled', false);
+    });
+}
+
+function checkLogin() {
+    var user = $('#existing_username').val();
+    var pass = $('#existing_password').val();
+    if (user.length === 0 || pass.length === 0) {
+        return;
+    }
+    $('#submit_login').text('Working...');
+    $('#submit_login').prop('disabled', true);
+
+    $.post('/User/CheckLogin', { user: user, password: pass }).done(function(result) {
+        if (result === 'ok') {
+            window.location = '/';
+            return;
+        }
+
+        $('#login_error_message').text(result);
+        $("#login_panel").effect("shake", { times: 2 });
+        $('#existing_password').val('');
+        $('#existing_password').focus();
+    }).fail(function(result) {
+        $('#login_error_message').text(result);
+        $("#login_panel").effect("shake", { times: 2 });
+        $('#existing_password').val('');
+        $('#existing_password').focus();
+    }).always(function(result) {
+        $('#submit_login').text('Submit');
+        $('#submit_login').prop('disabled', false);
     });
 }
 

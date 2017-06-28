@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Common\Command\EncryptionControl.cs" />
     <Compile Include="Common\Dto\CommonDto.cs" />
+    <Compile Include="Login\Command\LoginCommand.cs" />
     <Compile Include="Login\Command\NewUserCommand.cs" />
     <Compile Include="Login\Dto\UserDto.cs" />
     <Compile Include="Login\ILoginService.cs" />

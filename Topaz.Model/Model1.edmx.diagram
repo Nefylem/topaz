@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="217f591dd77e407bb562bdebe2ef5bb7" Name="Diagram1">
         <EntityTypeShape EntityType="topazModel.user" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="topazModel.user_session" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

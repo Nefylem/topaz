@@ -14,5 +14,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="user_session">
+      <EntityTypeMapping TypeName="topazModel.user_session">
+        <MappingFragment StoreEntitySet="user_session">
+          <ScalarProperty Name="user_ip" ColumnName="user_ip" />
+          <ScalarProperty Name="expiry" ColumnName="expiry" />
+          <ScalarProperty Name="session" ColumnName="session" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

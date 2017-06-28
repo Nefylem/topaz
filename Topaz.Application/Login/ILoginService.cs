@@ -11,5 +11,6 @@ namespace Topaz.Application.Login
     public interface ILoginService
     {
         CommonDto.CommandResult CreateNewUser(UserDto.NewUser newUser);
+        string CheckLogin(string user, string password, string ip);
     }
 }

@@ -26,5 +26,6 @@ namespace Topaz.Model
         }
     
         public DbSet<user> users { get; set; }
+        public DbSet<user_session> user_session { get; set; }
     }
 }

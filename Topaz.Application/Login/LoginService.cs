@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Web;
 using Topaz.Application.Common.Dto;
 using Topaz.Application.Login.Command;
 using Topaz.Application.Login.Dto;
@@ -14,6 +10,11 @@ namespace Topaz.Application.Login
         public CommonDto.CommandResult CreateNewUser(UserDto.NewUser newUser)
         {
             return new NewUserCommand().CreateNewUser(newUser);
+        }
+
+        public string CheckLogin(string user, string password, string ip)
+        {
+            return new LoginCommand().Check(user, password, ip);
         }
     }
 }

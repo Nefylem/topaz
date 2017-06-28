@@ -3,15 +3,14 @@
     Layout = "~/Views/Layouts/_login.cshtml";
 }
 
-<div class="login_panel">
+<div id="login_panel" class="login_panel">
     <ul id="login_selection" class="login_selection">
         <li><a id="existing_user_login" class="active" view="existing_user" onclick="setMenu(this)">Existing User</a></li>
         <li><a view="new_user" onclick="setMenu(this); setupNewUserFields();">New User</a></li>
     </ul>
     <div id="login_selection_display">
         <div id="existing_user">
-            login
-            Forgot username or password?
+            @Html.Partial("_existingUserLogin")
         </div>
         <div id="new_user" style="display: none">
             @Html.Partial("_createNewUser")

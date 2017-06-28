@@ -11,7 +11,10 @@ namespace Topaz.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var ip = Request.ServerVariables["REMOTE_ADDR"];
+            var user = TopazUser.Active(ip);
+            if (user == null) return PartialView("login");
+            return PartialView("home");
         }
     }
 }

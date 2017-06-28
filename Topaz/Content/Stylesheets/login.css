@@ -111,6 +111,7 @@
 .data_entry_title {
     width: 100%;
     background-color: #dddddd;
+    color: #333333;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 16px;
@@ -137,4 +138,19 @@
 .check_password_ok {
     color: green;
     font-weight: bold;
+}
+
+.data_entry_error{
+    text-align: center;
+    color: #8e1925;
+    font-style: italic;
+    font-weight: bold;
+}
+.data_entry_submit {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+
+.btn-full {
+    width: 100%
 }
